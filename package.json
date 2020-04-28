@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://gitlab.com/firbert96/portfolio/issues"
   },
-  "homepage": "https://gitlab.com/firbert96/portfolio#readme"
+  "homepage": "https://gitlab.com/firbert96/portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
