@@ -46,6 +46,7 @@ hr {
 .logo:hover {
 	animation: shake 0.5s;
 	animation-iteration-count: infinite;
+	cursor: pointer
   }
   
 @keyframes shake {
@@ -96,6 +97,10 @@ section{
 .certificate .thumbnail.muncul{
 	opacity:1;
 	transform: translate(0,0);
+}
+
+.thumbnail.muncul:hover{
+	cursor: pointer
 }
 
 .certificate{
