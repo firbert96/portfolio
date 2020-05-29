@@ -13,52 +13,27 @@ $('.page-scroll').on('click', function(e){
 	e.preventDefault();
 }); 
 
-//parallax
-// about
-$(window).on('load',function(){
-	$('.pKiri').addClass('pMuncul');
-	$('.pKanan').addClass('pMuncul');
-});
+// //parallax
+// // about
+// $(window).on('load',function(){
+// 	$('.pKiri').addClass('pMuncul');
+// 	$('.pKanan').addClass('pMuncul');
+// });
 
-$(window).scroll(function(){
-	// jumbotron
-	var wScroll = $(this).scrollTop();
-	$('.jumbotron img').css({
-		'transform':'translate(0px,'+wScroll/4+'%)'
-	});
-	$('.jumbotron h1').css({
-		'transform':'translate(0px,'+wScroll/2+'%)'
-	});
-	$('.jumbotron p').css({
-		'transform':'translate(0px,'+wScroll/1.5+'%)'
-	});
-	//
-
-	//certificate
-	if(wScroll>$('.certificate').offset().top-150){
-		$('.certificate .thumbnail').each(function(i){
-			setTimeout(function(){
-				$('.certificate .thumbnail').eq(i).addClass('muncul'); 
-			},300*i+1);
-		});
-
-	}
-});
-
+//image modal
 // Get the modal
 var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("myImg");
+var img = document.getElementsByClassName('imgPortfolio');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 $(document).ready(function(){
-	$(".myImg").click(function(event){
+	$(".imgPortfolio").click(function(event){
 	  event.preventDefault();
 	  modal.style.display = "block";
   	  modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-
+      captionText.innerHTML = this.alt;	
 	});
   });
 
