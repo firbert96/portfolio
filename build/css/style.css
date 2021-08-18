@@ -56,6 +56,12 @@ hr {
 	display: inline-block;
 }
 
+.shake:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+	cursor: pointer
+}
+
 .logo:hover {
 	animation: shake 0.5s;
 	animation-iteration-count: infinite;
@@ -67,6 +73,7 @@ hr {
 	animation-iteration-count: infinite;
 	cursor: pointer	
 }
+
   
 @keyframes shake {
 	0% { transform: translate(1px, 1px) rotate(0deg); }
